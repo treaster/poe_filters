@@ -1,0 +1,30 @@
+# Define variables with:
+# DefineVar [VariableName] [VariableValue]
+# Define style with:
+# DefineStyle [Arg1] [Arg2] ...
+    # Multiple BaseType or Prophecy specifications will be unrolled into
+    # separate, full blocks.
+    # Reference variables with [[VarNme]]
+    # Arg values containing spaces must use quotes, even if the final filter
+    # wouldn't use quotes in this context (e.g. colors)
+    #
+    # Variables can be passed as style arguments.
+    # Multiple styles can apply to one block. If two styles specify the
+    # same attribute, the second style will override the first.
+    # Attributes can also be specified directly, as normal. This overrides
+    # any attribute or style that was specified previously, and will be
+    # overridden by specifications that come later.
+Show
+    BaseType "Divine Orb"
+    MinimapIcon 1 Pink Circle # Style "Style1"
+    SetBorderColor 11 22 33 # Style "Style1"
+    SetTextColor 100 100 100
+
+Show
+    BaseType "Exalted Orb"
+    MinimapIcon 1 Pink Circle # Style "Style1"
+    SetBorderColor 11 22 33 # Style "Style1"
+    SetTextColor 100 100 100
+
+Hide
+
